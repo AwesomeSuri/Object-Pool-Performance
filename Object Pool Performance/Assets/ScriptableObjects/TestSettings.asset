@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1347d34901c060949a16ebdff67a7e74, type: 3}
+  m_Name: TestSettings
+  m_EditorClassIdentifier: 
+  duration: 10
+  seed: 0
+  instances: 10062
+  technique: {fileID: 11400000, guid: df0a3cbd8859e7a429e76942958179c8, type: 2}
