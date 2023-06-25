@@ -35,8 +35,8 @@ public class TestManager : MonoBehaviour
             yield return null;
             
             var currTime = Time.time - startTime;
-            var fps = 1 / Time.deltaTime;
-            techObj.AddPerformance(currTime, fps);
+            var mms = Time.deltaTime * 1000;
+            techObj.AddPerformance(currTime, mms);
 
             var progress = currTime / settings.duration;
             progressEvent.Invoke(progress);

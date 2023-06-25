@@ -10,7 +10,7 @@ public class TechniqueObject : ScriptableObject
     public int duration;
     public int seed;
     public int instances;
-    public DateTime date;
+    public long date;
     public List<Vector2> performance = new();
 
     public void ResetPerformance(int newDuration, int newSeed, int newInstances)
@@ -18,7 +18,7 @@ public class TechniqueObject : ScriptableObject
         duration = newDuration;
         seed = newSeed;
         instances = newInstances;
-        date = DateTime.Now;
+        date = DateTime.Now.Ticks;
         performance.Clear();
     }
 

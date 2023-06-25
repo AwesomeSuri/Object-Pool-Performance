@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StyleSheet.uss?fileID=7433441132597879392&amp;guid=ab23605a3e4501a47b59e31270570b33&amp;type=3#StyleSheet" />
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(255, 255, 255); width: 100%; height: 100%; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; -unity-font-style: bold;">
+        <ui:VisualElement name="Settings" style="background-color: rgba(0, 0, 0, 0); margin-bottom: 20px;">
+            <ui:Label tabindex="-1" text="Settings" display-tooltip-when-elided="true" class="h1" />
+            <ui:IntegerField label="Instances" value="1000" name="Instances" />
+            <ui:IntegerField label="Duration" value="20" name="Duration" />
+            <ui:IntegerField label="Random Seed" value="42" name="Seed" />
+        </ui:VisualElement>
+        <ui:ListView focusable="true" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

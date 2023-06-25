@@ -11,7 +11,7 @@ public class IndividualUpdateManager : MonoBehaviour
         Random.InitState(settings.seed);
         for (int i = 0; i < settings.instances; i++)
         {
-            Instantiate(instancePrefab).GetComponent<InstanceMovement>().Setup(i);
+            Instantiate(instancePrefab).GetComponent<HeadMovement>().Setup(i);
         }
     }
 }

@@ -1,0 +1,52 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="xAxisMarker" src="project://database/Assets/UI/xAxisMarker.uxml?fileID=9197481963319205126&amp;guid=e968a0c284b289a43acabc10e25477b0&amp;type=3#xAxisMarker" />
+    <ui:Template name="yAxisMarker" src="project://database/Assets/UI/yAxisMarker.uxml?fileID=9197481963319205126&amp;guid=79cd5cc450a48c14eb919fb5e2817fde&amp;type=3#yAxisMarker" />
+    <ui:Template name="DiagramLine" src="project://database/Assets/UI/DiagramLine.uxml?fileID=9197481963319205126&amp;guid=a9d450daf8472954da1604f2de0a445a&amp;type=3#DiagramLine" />
+    <Style src="project://database/Assets/UI/StyleSheet.uss?fileID=7433441132597879392&amp;guid=ab23605a3e4501a47b59e31270570b33&amp;type=3#StyleSheet" />
+    <ui:VisualElement name="Technique" class="technique">
+        <ui:VisualElement name="Main" class="technique-section-part" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" class="h1" />
+            <ui:Button text="Start new test" display-tooltip-when-elided="true" class="button" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; transition-delay: 0s;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Info" class="technique-section-part" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:TextField picking-mode="Ignore" label="Test Started at:" value="today" focusable="false" readonly="true" name="Date" />
+            <ui:TextField picking-mode="Ignore" label="Instances:" value="1000" focusable="false" readonly="true" name="Instances" />
+            <ui:TextField picking-mode="Ignore" label="Random Seed:" value="42" focusable="false" readonly="true" name="Seed" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Performance" class="technique-section-part" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="Diagram" class="diagram" style="background-color: rgb(255, 255, 255);">
+                <ui:VisualElement name="X-Axis" class="x-axis">
+                    <ui:Instance template="xAxisMarker" name="xAxisMarker" />
+                    <ui:Instance template="xAxisMarker" name="xAxisMarker">
+                        <AttributeOverrides element-name="MarkerLabel" text="5s" />
+                    </ui:Instance>
+                    <ui:Instance template="xAxisMarker" name="xAxisMarker">
+                        <AttributeOverrides element-name="MarkerLabel" text="10s" />
+                    </ui:Instance>
+                    <ui:Instance template="xAxisMarker" name="xAxisMarker">
+                        <AttributeOverrides element-name="MarkerLabel" text="15s&#10;" />
+                    </ui:Instance>
+                    <ui:Instance template="xAxisMarker" name="xAxisMarker">
+                        <AttributeOverrides element-name="MarkerLabel" text="20s&#10;" />
+                    </ui:Instance>
+                </ui:VisualElement>
+                <ui:VisualElement name="Y-Axis" class="y-axis" style="position: absolute; height: 100%; justify-content: space-between; left: 100%; flex-direction: column-reverse;">
+                    <ui:Instance template="yAxisMarker" name="yAxisMarker">
+                        <AttributeOverrides element-name="MarkerLabel" text="0fps" />
+                    </ui:Instance>
+                    <ui:Instance template="yAxisMarker" name="yAxisMarker">
+                        <AttributeOverrides element-name="MarkerLabel" text="60fps" />
+                    </ui:Instance>
+                </ui:VisualElement>
+                <ui:VisualElement name="Lines" class="diagram-lines" style="justify-content: space-between;">
+                    <ui:Instance template="DiagramLine" name="DiagramLine" />
+                    <ui:Instance template="DiagramLine" name="DiagramLine" />
+                    <ui:Instance template="DiagramLine" name="DiagramLine" />
+                    <ui:Instance template="DiagramLine" name="DiagramLine" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Connections" class="fill" />
+                <ui:VisualElement name="Points" class="fill" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

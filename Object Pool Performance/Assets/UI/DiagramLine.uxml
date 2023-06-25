@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StyleSheet.uss?fileID=7433441132597879392&amp;guid=ab23605a3e4501a47b59e31270570b33&amp;type=3#StyleSheet" />
+    <ui:VisualElement name="DiagramLine" class="diagram-line" />
+</ui:UXML>

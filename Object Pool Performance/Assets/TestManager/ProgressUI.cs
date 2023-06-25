@@ -5,13 +5,12 @@ public class ProgressUI : MonoBehaviour
 {
     public FloatEvent progressEvent;
     
-    private VisualElement root;
-    private VisualElement progressBar;
+    private ProgressBar progressBar;
 
 
     private void OnEnable()
     {
-        progressBar ??= GetComponent<UIDocument>().rootVisualElement.Q<VisualElement>("ProgressBar");
+        progressBar ??= GetComponent<UIDocument>().rootVisualElement.Q<ProgressBar>();
         progressEvent.Subscribe(SetProgress);
     }
 
@@ -22,6 +21,6 @@ public class ProgressUI : MonoBehaviour
 
     private void SetProgress(float progress)
     {
-        progressBar.style.width = Length.Percent(progress);
+        progressBar.value = progress;
     }
 }

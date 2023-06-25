@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7401000107492147919}
   - component: {fileID: 4602495994931078202}
   m_Layer: 0
-  m_Name: Instance
+  m_Name: InstanceHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 227910053124879780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -97,3 +97,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: 801ba3598aeaf624386abaa8d59722ce, type: 2}
+  trailPart: {fileID: 2003712211998914859, guid: 2d4e6aa67970e8b43b06a9e88c34dd9d,
+    type: 3}
+  trackX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1.2
+      value: 2
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  trackY:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  trackScale:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  trackRot:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
